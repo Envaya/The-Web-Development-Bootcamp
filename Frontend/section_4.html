@@ -1,0 +1,103 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="style_2.css">
+  <meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+<h1>Register</h1>
+<form>
+<div>
+  <label for="firstName">First Name:</label>
+  <input name="firstName" id="firstName" placeholder="John" type="text" required>
+    <label for="lastName">First Name:</label>
+  <input name="lastName" id="lastName" placeholder="Smith" type="text" required>
+</div>
+
+<div>
+  <label for="gender">Male</label>
+  <input type="radio" name="gender" id="gender" value="male" required>
+  <label for="gender">Female</label>
+  <input type="radio"name="gender" id="gender" value="female">
+  <label for="gender">Other</label>
+  <input type="radio" name="gender" id="gender" value="other">
+</div>
+
+<div>
+  <label for"mail">Email</label>
+  <input type="text" name="mail" id="mail" placeholder="your mail" required>
+  <label for="password">Password:</label>
+  <input type="password" name="password" id="password" placeholder="your password" pattern=".{5,10}" required title="Password must be 5-10 characters.">
+</div>
+
+<div>
+  <label for="birthday">Birthday: 
+
+  <select name="birthdayMonth" required>
+    <option >Month</option>
+    <option>January</option>
+    <option>February</option>
+    <option>March</option>
+    <option>April</option>
+    <option>May</option>
+    <option>June</option>
+    <option>July</option>
+    <option>August</option>
+    <option>September</option>
+    <option>October</option>
+    <option>November</option>
+    <option>December</option>
+  </select>
+
+  <select name="birthdayDay" required>
+    <option value="1">1st</option>
+    <option value="2">2nd</option>
+    <option value="3">3rd</option>
+    <option value="4">4th</option>
+    <option value="5">5th</option>
+  </select>
+
+  <select name="birthdayYear" required>
+    <option>1990</option>
+    <option>1991</option>
+    <option>1992</option>
+    <option>1993</option>
+    <option>1994</option>
+  </select>
+  </label>
+</div>
+
+<div>
+  I agree to the terms and conditions
+  <input type="checkbox" name="termsagree" value="YES" required>
+</div>
+
+<button>Submit</button>
+</form>
+
+
+</body>
+</html>
